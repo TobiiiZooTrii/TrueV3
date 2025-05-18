@@ -1,3 +1,15 @@
+print("Break");
+local v0 = require(game:GetService("ReplicatedStorage").Notification);
+v0.new("<Color=Green>NeXus Hub Welcome @!<Color=/>"):Display();
+wait(0.5);
+v0.new("<Color=Red>Project V3 Running...!<Color=/>"):Display();
+wait(1);
+repeat
+    wait();
+until game.Players.LocalPlayer
+if  not game:IsLoaded() then
+    game.Loaded:Wait();
+end
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
