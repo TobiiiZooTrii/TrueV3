@@ -1340,8 +1340,9 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 Window = Fluent:CreateWindow({
-    Title = "NeXus Hub Blox-Fruits [ Premium ]",
-    SubTitle = "By Zero Null",
+    Title = "NeXus Hub 
+		-Blox Fruit [ Premium ]",
+    SubTitle = "by Tokii",
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 350),
     Acrylic = true, 
