@@ -2736,7 +2736,7 @@ spawn(function()
 end)
 Main = Window:AddTab({ Title = "Tab Farming", Icon = "" })
 Main:AddButton({
-    Title = "Discord Official [ NeXus Hub ]",
+    Title = "Discord NeXus Hub",
     Callback = function()
         pcall(function()
             setclipboard("https://discord.gg/597EQQZc")
@@ -8047,12 +8047,12 @@ Input = PVP:AddInput("Input", {
 })
 ----------------------------------------------------------------------------------------------------
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Notification";
-    Text = "This is V3 Version";
+    Title = "NeXus Hub V3";
+    Text = "Playing Blox Fruit Game...";
     Icon = "rbxassetid://75177922589625";
     Duration = 1e5;
 	Button1 = "Yes";
-	Button2 = "No";
+	Button2 = "...";
 })
 
 local ScreenGui = Instance.new("ScreenGui")
