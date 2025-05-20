@@ -1348,7 +1348,7 @@ Window = Fluent:CreateWindow({
     Theme = "Aqua",
     MinimizeKey = Enum.KeyCode.LeftControl 
 })
-Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" })
+Shop = Window:AddTab({ Title = "Tab Shop", Icon = "shopping-cart" })
 sex = {
     "WildDares",
     "BossBuild",
@@ -1973,19 +1973,19 @@ LGa:AddButton({
 })
 LGa:AddButton({
 	Title = "Show Item",
-	Description = "I'm Still Fixing....",
+	Description = "",
 	Callback = function()	
 	end
 })
 LGa:AddButton({
     Title = "Open Devil Fruit Shop [ Mirage ]",
-    Description = "I'm Still Fixing....",
+    Description = "",
     Callback = function()     
     end
 })
 LGa:AddButton({
     Title = "Open Devil Fruit Shop",
-    Description = "I'm Still Fixing....",
+    Description = "",
     Callback = function()            
     end
 })
@@ -2734,6 +2734,14 @@ spawn(function()
     end
 end)
 Main = Window:AddTab({ Title = "Tab Farming", Icon = "" })
+Main:AddButton({
+    Title = "Get Banned",
+    Callback = function()
+        pcall(function()
+            setclipboard("Joke")
+        end)
+    end
+})
 Main:AddButton({
     Title = "Discord NeXus Hub",
     Callback = function()
@@ -4172,7 +4180,7 @@ spawn(function()
                         game.StarterGui:SetCore("SendNotification", {
                             Title = "Notification",
                             Text = "Not Have Enough Material",
-                            Icon = "http://www.roblox.com/asset/?id=",
+                            Icon = "http://www.roblox.com/asset/?id=90008731814141",
                             Duration = 2.5
                         })
                     else
