@@ -8065,18 +8065,18 @@ game.StarterGui:SetCore("SendNotification", {
     Title = "NeXus Hub Cloud";
     Text = "Loading....";
     Icon = "rbxassetid://75177922589625";
-    Duration = 20;
+    Duration = 10;
 })
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Notification";
-    Text = "Success";
+    Title = "TrueZ Project V3";
+    Text = "Thành Công";
     Icon = "rbxassetid://75177922589625";
-    Duration = 25;
+    Duration = 12;
 })
 ----------------------------------------------------------------------------------------------------
 game.StarterGui:SetCore("SendNotification", {
     Title = "NeXus Hub";
-    Text = "Do You Want to Reset Settings?";
+    Text = "Do You Want To Reset Again?";
     Icon = "rbxassetid://124374213543717";
     Duration = 1e5;
 	Button1 = "Yes";
@@ -8112,7 +8112,7 @@ ImageLabel.BackgroundTransparency = 1
 ImageLabel.BorderSizePixel = 1
 ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
 ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=118600721466641"
+ImageLabel.Image = "http://www.roblox.com/asset/?id= 118600721466641"
 
 UICorner.CornerRadius = UDim.new(1, 0)
 UICorner.Parent = Frame
