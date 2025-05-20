@@ -1357,7 +1357,7 @@ local currentIndex = 1
 
 local function createWindowWithTheme(theme)
     local Window = Fluent:CreateWindow({
-        Title = "NeXus Hub-Blox Fruit",
+        Title = "NeXus Hub-Blox Fruit [ Premium ]",
         SubTitle = "by Tokii",
         TabWidth = 160,
         Size = UDim2.fromOffset(500, 350),
