@@ -1339,15 +1339,45 @@ local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
-Window = Fluent:CreateWindow({
-    Title = "NeXus Hub-Blox Fruit [ Premium ]",
-    SubTitle = "by Tokii",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(500, 350),
-    Acrylic = true, 
-    Theme = "Jester",
-    MinimizeKey = Enum.KeyCode.LeftControl 
-})
+local themes = {
+    "Slate",
+    "Aqua",
+    "Dark",
+    "Light",
+    "Discord",
+    "Dracula",
+    "Nord",
+    "Rose",
+    "Amethyst",
+    "Serenity",
+    "Jester"
+}
+
+local currentIndex = 1
+
+local function createWindowWithTheme(theme)
+    local Window = Fluent:CreateWindow({
+        Title = "NeXus Hub-Blox Fruit",
+        SubTitle = "by Tokii",
+        TabWidth = 160,
+        Size = UDim2.fromOffset(500, 350),
+        Acrylic = true,
+        Theme = theme,
+        MinimizeKey = Enum.KeyCode.LeftControl
+    })
+
+    local Shop = Window:AddTab({ Title = "Theme: " .. theme })
+
+    Shop:AddButton({
+        Title = "Next Theme",
+        Callback = function()
+            currentIndex = currentIndex % #themes + 1
+            createWindowWithTheme(themes[currentIndex])
+        end
+    })
+end
+
+createWindowWithTheme(themes[currentIndex])
 Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" })
 sex = {
     "WildDares",
