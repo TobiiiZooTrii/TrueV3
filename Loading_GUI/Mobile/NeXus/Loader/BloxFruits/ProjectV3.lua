@@ -1340,13 +1340,12 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 Window = Fluent:CreateWindow({
-    Title = "NeXus Hub 
-		-Blox Fruit [ Premium ]",
+    Title = "NeXus Hub-Blox Fruit [ Premium ]",
     SubTitle = "by Tokii",
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 350),
     Acrylic = true, 
-    Theme = "Dark",
+    Theme = "Aqua",
     MinimizeKey = Enum.KeyCode.LeftControl 
 })
 Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" })
@@ -1838,9 +1837,9 @@ spawn(function()
     end
 end)	        
 Input = Server:AddInput("Input", {
-     Title = "Input Job Id",
+     Title = "Job Id",
      Default = "",
-     Placeholder = "Paste Job Id",
+     Placeholder = "Plz Job Id",
      Numeric = false,
      Finished = false,
      Callback = function(Value)
