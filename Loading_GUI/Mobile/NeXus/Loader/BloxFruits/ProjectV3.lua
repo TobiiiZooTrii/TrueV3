@@ -2,7 +2,7 @@ print("Break");
 local v0 = require(game:GetService("ReplicatedStorage").Notification);
 v0.new("<Color=Green>Loading....<Color=/>"):Display();
 wait(0.5);
-v0.new("<Color=Red>Project V3 Running...!<Color=/>"):Display();
+v0.new("<Color=Purple>Join Discord For Updates<Color=/>"):Display();
 wait(1);
 repeat
     wait();
