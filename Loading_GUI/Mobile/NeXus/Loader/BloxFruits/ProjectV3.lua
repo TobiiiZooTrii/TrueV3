@@ -1,6 +1,6 @@
 print("Break");
 local v0 = require(game:GetService("ReplicatedStorage").Notification);
-v0.new("<Color=Green>NeXus Hub Welcome @!<Color=/>"):Display();
+v0.new("<Color=Green>Loading....<Color=/>"):Display();
 wait(0.5);
 v0.new("<Color=Red>Project V3 Running...!<Color=/>"):Display();
 wait(1);
@@ -8047,12 +8047,19 @@ Input = PVP:AddInput("Input", {
 })
 ----------------------------------------------------------------------------------------------------
 game.StarterGui:SetCore("SendNotification", {
-    Title = "NeXus Hub V3";
-    Text = "Playing Blox Fruit Game...";
+    Title = "NeXus Hub";
+    Text = "Loadinggg....";
     Icon = "rbxassetid://75177922589625";
     Duration = 1e5;
+})
+----------------------------------------------------------------------------------------------------
+game.StarterGui:SetCore("SendNotification", {
+    Title = "NeXus Hub";
+    Text = "Do You Want to Reset Settings?";
+    Icon = "rbxassetid://124374213543717";
+    Duration = 1e5;
 	Button1 = "Yes";
-	Button2 = "...";
+	Button2 = "No";
 })
 
 local ScreenGui = Instance.new("ScreenGui")
