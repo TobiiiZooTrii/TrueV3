@@ -1348,7 +1348,7 @@ Window = Fluent:CreateWindow({
     Theme = "Aqua",
     MinimizeKey = Enum.KeyCode.LeftControl 
 })
-Shop = Window:AddTab({ Title = "Tab Shop", Icon = "shopping-cart" })
+Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" })
 sex = {
     "WildDares",
     "BossBuild",
@@ -1839,7 +1839,7 @@ end)
 Input = Server:AddInput("Input", {
      Title = "Job Id",
      Default = "",
-     Placeholder = "Plz Job Id",
+     Placeholder = "Job Id",
      Numeric = false,
      Finished = false,
      Callback = function(Value)
@@ -2738,7 +2738,15 @@ Main:AddButton({
     Title = "Get Banned",
     Callback = function()
         pcall(function()
-            setclipboard("Joke")
+            local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+while true do
+    local textToSend = "I AM GAY"
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(textToSend, "All")
+
+    wait()
+	
+end
         end)
     end
 })
@@ -8054,10 +8062,16 @@ Input = PVP:AddInput("Input", {
 })
 ----------------------------------------------------------------------------------------------------
 game.StarterGui:SetCore("SendNotification", {
-    Title = "NeXus Hub";
-    Text = "Loadinggg....";
+    Title = "NeXus Hub Cloud";
+    Text = "Loading....";
     Icon = "rbxassetid://75177922589625";
-    Duration = 1e5;
+    Duration = 20;
+})
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Notification";
+    Text = "Success";
+    Icon = "rbxassetid://75177922589625";
+    Duration = 25;
 })
 ----------------------------------------------------------------------------------------------------
 game.StarterGui:SetCore("SendNotification", {
@@ -8098,7 +8112,7 @@ ImageLabel.BackgroundTransparency = 1
 ImageLabel.BorderSizePixel = 1
 ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
 ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.Image = "http://www.roblox.com/asset/?id= 118600721466641"
+ImageLabel.Image = "http://www.roblox.com/asset/?id=118600721466641"
 
 UICorner.CornerRadius = UDim.new(1, 0)
 UICorner.Parent = Frame
